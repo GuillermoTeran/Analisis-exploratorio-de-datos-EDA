@@ -1,4 +1,7 @@
 # Análisis de comportamiento de compra de clientes — Proyecto Instacart
+
+## ES Español
+
 Descripción del proyecto:
 
 Este proyecto consistió en el análisis de datos de Instacart, una plataforma de entrega de comestibles en línea. Utilizando un conjunto de datos real modificado para fines educativos, el objetivo fue explorar los hábitos de compra de los clientes, limpiar los datos y generar visualizaciones que comuniquen los principales hallazgos.
@@ -89,5 +92,101 @@ Python (pandas, numpy, matplotlib, seaborn)
 Jupyter Notebook
 
 Técnicas de EDA, limpieza de datos, visualización y segmentación de clientes
+
+
+# Customer purchasing behavior analysis — Instacart Project
+
+## US English
+
+Project description:
+
+This project consisted of analyzing data from Instacart, an online grocery delivery platform. Using a real dataset modified for educational purposes, the goal was to explore customer purchasing habits, clean the data, and generate visualizations that communicated the main findings.
+
+## Analysis objectives:
+Perform a complete preprocessing of the dataset, correcting data types, missing values, and duplicates.
+
+Analyze purchasing patterns based on the day of the week, time of day, and order frequency.
+
+Identify the most popular products, reorders, and items added to the cart first.
+
+Understand recurring customer behavior using metrics such as reorder rate and number of items per order.
+
+## Data preparation and cleaning
+We worked with five main files:
+
+instacart_orders.csv
+
+products.csv
+
+order_products.csv
+
+aisles.csv
+
+departments.csv
+
+### Processing applied:
+
+Conversion of columns to appropriate data types (int, category, datetime).
+
+Identification and treatment of missing values, especially in columns such as days_since_prior_order.
+
+Elimination of duplicates with logical criteria based on user ID and order.
+
+Documentation of decisions made to ensure traceability and reproducibility.
+
+## Exploratory data analysis (EDA)
+### A. Temporal analysis of orders
+Most orders are placed between 9:00 a.m. and 5:00 p.m., with a peak at 10:00 a.m.
+
+Sunday and Monday are the busiest days for placing orders.
+
+A pattern of recurring orders every 7 days was observed, indicating weekly purchasing habits.
+
+### B. User behavior
+Comparing Wednesdays and Saturdays, Saturdays showed a greater dispersion of order times, with more activity in the morning.
+
+Most customers place between 4 and 10 orders in total.
+
+The 20 most ordered products include fresh fruit, milk, organic bananas, and bread.
+
+### C. Reorder and cart habits
+The average number of items per order is approximately 10 to 12 products.
+
+The most commonly reordered products include frequently consumed items such as bananas, milk, and eggs.
+
+The reorder rate per product was calculated, highlighting items with repurchase rates above 70%.
+
+The products most frequently added as the first item to the cart were identified, which may reflect user priorities.
+
+## Visualizations generated:
+Comparative histograms by hour and day of the week.
+
+Bar charts for the most popular and most reordered products.
+
+Density diagrams for order distribution by customer.
+
+Scatter plots and sorted tables for reorder analysis.
+
+All visualizations included:
+
+✅ Clear titles
+✅ Labeled axes
+✅ Legends when necessary
+✅ plt.show() for correct display in Jupyter Notebook
+
+## Key conclusions:
+Purchasing habits follow a very distinct weekly and hourly pattern, which is useful for optimizing logistics operations and advertising campaigns.
+
+There are products with high potential for loyalty and recurrence that can be included in promotions or subscriptions.
+
+The data allows customers to be segmented according to frequency and type of products, opening the door to personalized recommendations and improvements in retention.
+
+## Tools used:
+
+Python (pandas, numpy, matplotlib, seaborn)
+
+Jupyter Notebook
+
+EDA techniques, data cleaning, visualization, and customer segmentation
 
 
